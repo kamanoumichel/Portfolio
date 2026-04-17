@@ -1,0 +1,31 @@
+<header [class.scrolled]="isScrolled">
+  <div class="container nav">
+    <div class="logo" (click)="scrollToSection('hero')">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Glorieux Michel</span>
+    </div>
+
+    <nav class="nav-links">
+        <a *ngFor="let item of navItems" 
+        (click)="scrollToSection(item.targetId)"
+        [class.active]="activeSection === item.targetId"
+        >{{item.label}}
+        </a>
+    </nav>
+
+    <button class="hamberger" (click)="toggleMenu()">
+        <span [class.open]="isMenuOpen"></span>
+        <span [class.open]="isMenuOpen"></span>
+        <span [class.open]="isMenuOpen"></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" *ngIf="isMenuOpen">
+    <a *ngFor="let item of navItems" 
+      (click)="scrollToSection(item.targetId)"
+      [class.active]="activeSection === item.targetId"
+      >{{item.label}}
+    </a>
+  </div>
+
+</header>

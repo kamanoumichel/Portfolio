@@ -1,0 +1,15 @@
+<div class="container" data-aos="fade-up">
+    <h2 class="section-title">Mon expérience</h2>
+    
+    <div class="timeline">
+        <div class="timeline-item" *ngFor="let item of experience">
+            <div class="dot"></div>
+            <div class="content card">
+                <span class="period">{{ item.period }}</span>
+                <h3>{{ item.title }}</h3>
+                <h4>{{ item.subtitle }}</h4>
+                <p class="description">{{ item.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>

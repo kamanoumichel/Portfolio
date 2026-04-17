@@ -1,0 +1,17 @@
+<div class="container" data-aos="fade-up">
+  <h2 class="section-title">Langues</h2>
+
+  <div class="langue-item" *ngFor="let lang of langues">
+    <div class="langue-header">
+      <span class="langue-nom">{{ lang.flag }} {{ lang.nom }}</span>
+      <span class="langue-niveau">{{ lang.niveau }}</span>
+    </div>
+    <div class="langue-barre-bg">
+      <div
+        class="langue-barre-fill"
+        [style.width.%]="languesVisible ? lang.pourcentage : 0"
+        [style.backgroundImage]="lang.couleur"
+      ></div>
+    </div>
+  </div>
+</div>

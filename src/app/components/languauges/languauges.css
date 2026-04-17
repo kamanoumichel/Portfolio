@@ -1,0 +1,55 @@
+.langues-section {
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.5rem;
+  max-width: 420px;
+}
+
+.langues-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.38);
+  margin: 0 0 1rem;
+}
+
+.langue-item {
+  margin-bottom: 1rem;
+}
+
+.langue-item:last-child {
+  margin-bottom: 0;
+}
+
+.langue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.langue-nom {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+
+.langue-niveau {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.langue-barre-bg {
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+
+.langue-barre-fill {
+  height: 100%;
+  border-radius: 999px;
+  width: 0;
+  transition: width 1s ease-out;
+}
